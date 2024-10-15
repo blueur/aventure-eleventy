@@ -1,0 +1,13 @@
+{
+  "name": "aventure-eleventy",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "author": "blueur",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

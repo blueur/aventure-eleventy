@@ -1,0 +1,19 @@
+---
+pagination:
+  data: aventure
+  size: 1
+  alias: aventure
+permalink: "aventure/{{ aventure.id }}/"
+
+layout: base.njk
+eleventyComputed:
+  title: "{{ aventure.name }}"
+---
+
+<h1>{{ aventure.name }}</h1>
+<p>{{ aventure.description }}</p>
+<ul>
+  {% for option in aventure.options %}
+  <li><a href="../{{ option.next }}/">{{ option.text }}</a></li>
+  {% endfor %}
+</ul>

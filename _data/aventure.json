@@ -1,0 +1,58 @@
+[
+  {
+    "id": "rangement",
+    "name": "Rangement",
+    "description": "Vous décidez de faire du rangement dans votre maison. Par où commencer ?",
+    "options": [
+      {
+        "text": "Cave",
+        "next": "cave"
+      },
+      {
+        "text": "Grenier",
+        "next": "grenier"
+      }
+    ]
+  },
+  {
+    "id": "cave",
+    "name": "Cave",
+    "description": "Vous trouvez une vieille boîte en carton.",
+    "options": [
+      {
+        "text": "Ouvrir la boîte",
+        "next": "tresor"
+      },
+      {
+        "text": "Refermer la boîte",
+        "next": "rangement"
+      }
+    ]
+  },
+  {
+    "id": "grenier",
+    "name": "Grenier",
+    "description": "Vous trouvez une vieille malle en bois.",
+    "options": [
+      {
+        "text": "Ouvrir la malle",
+        "next": "tresor"
+      },
+      {
+        "text": "Refermer la malle",
+        "next": "rangement"
+      }
+    ]
+  },
+  {
+    "id": "tresor",
+    "name": "Trésor",
+    "description": "Vous trouvez un trésor !",
+    "options": [
+      {
+        "text": "Recommencer",
+        "next": "rangement"
+      }
+    ]
+  }
+]
