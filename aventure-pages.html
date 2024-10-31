@@ -17,3 +17,6 @@ eleventyComputed:
   <li><a href="../{{ option.next }}/">{{ option.text }}</a></li>
   {% endfor %}
 </ul>
+{% if aventure.image %}
+<img src="../../images/{{ aventure.image }}" alt="{{ aventure.name }}" />
+{% endif %}
