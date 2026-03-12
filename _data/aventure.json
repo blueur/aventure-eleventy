@@ -5,11 +5,11 @@
     "description": "Vous décidez de faire du rangement dans votre maison. Par où commencer ?",
     "options": [
       {
-        "text": "Cave",
+        "text": "Descendre à la cave.",
         "next": "cave"
       },
       {
-        "text": "Grenier",
+        "text": "Monter au grenier.",
         "next": "grenier"
       }
     ]
@@ -20,11 +20,11 @@
     "description": "Vous trouvez une vieille boîte en carton.",
     "options": [
       {
-        "text": "Ouvrir la boîte",
+        "text": "Ouvrir la boîte.",
         "next": "tresor"
       },
       {
-        "text": "Refermer la boîte",
+        "text": "Refermer la boîte.",
         "next": "rangement"
       }
     ]
@@ -35,11 +35,11 @@
     "description": "Vous trouvez une vieille malle en bois.",
     "options": [
       {
-        "text": "Ouvrir la malle",
+        "text": "Ouvrir la malle.",
         "next": "tresor"
       },
       {
-        "text": "Refermer la malle",
+        "text": "Refermer la malle.",
         "next": "rangement"
       }
     ]
@@ -50,7 +50,7 @@
     "description": "Vous trouvez un trésor !",
     "options": [
       {
-        "text": "Recommencer",
+        "text": "Recommencer.",
         "next": "rangement"
       }
     ],

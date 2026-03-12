@@ -8,17 +8,18 @@ on:
 permissions:
   pages: write
   id-token: write
+  contents: read
 
 jobs:
   deploy:
-    name: Build and deploy to GitHub Pages
+    name: Build & Deploy
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
           node-version: lts/*
           cache: npm
@@ -27,7 +28,7 @@ jobs:
       - name: Build website
         run: npm run build
       - name: Upload Build Artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: _site
       - name: Deploy to GitHub Pages
